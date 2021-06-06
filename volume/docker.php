@@ -4,15 +4,16 @@
         <title>Docker</title>
     </head>
     <body>
-        <H1 style="color:blue;" align="center"> DOCKERFILE </H1>
+        <H1 style="color:blue;" align="center"> COMMIT EN DOCKER </H1>
         <font face="Comic Sans MS,arial" size=4>"
-        Un Dockerfile es un archivo de texto plano que contiene una serie de instrucciones necesarias para crear una imagen que, posteriormente, se convertirá en una sola aplicación utilizada para un determinado propósito. 
-        La base del funcionamiento de Docker es mediante Dockerfiles.
+        Una de las funciones menos conocidas de Docker es la posibilidad guardar el estado actual de un contenedor como si fuera una imagen, si venimos de entornos de virtualizacion, seria el equivale al “snapshot”.
+        Para utilizarlo basta con ejecutar:
+        <b>docker commit NombreDelcontenedor_o_id nombredelaimagen:tag</b>
+        <p>La ejecución es inmediata, y la imagen resultante a parte de guardar los datos de la imagen base del contenedor de origen, también guarda todos los cambios realizados manualmente dentro del contenedor, ya sean datos, cambios directos que se hicieron accediendo al contenedor o archivos copiados por medio de docker cp</p>
 
-        Es como la receta necesaria para un banquete, en este caso el Dockerfile es necesario para la imagen que queramos construir, el Dockerfile es la receta y el gran banquete será nuestra imagen
-
+    
         </font> 
         
-            <div align="center"><img src="https://dc722jrlp2zu8.cloudfront.net/media/cache/28/cd/28cd34553b6fa602986df32f692eee9c.webp"></div>
+            <div align="center"><img src="https://2.bp.blogspot.com/-t7qL18TM_ug/W888g09abnI/AAAAAAAARLM/8r5fIFujOWMyU5RQJWxHMYL_Rwl5c3BcgCLcBGAs/s1600/DockerSave.png"></div>
     </body>
 </html>
